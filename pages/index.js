@@ -1,16 +1,16 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 export async function getServerSideProps() {
-  const res = await fetch("http://reyne-drops.vercel.app/api/drops");
-  const drops = await res.json();
+  const res = await fetch('http://reyne-drops.vercel.app/api/drops')
+  const drops = await res.json()
   return {
     props: { drops },
-  };
+  }
 }
 
 export default function Home({ drops }) {
-  const links = drops.links;
+  const links = drops.links
 
   return (
     <>
@@ -26,9 +26,9 @@ export default function Home({ drops }) {
 
       <main className={styles.main}>
         <img
-          src={"/alex-reyne-logo.png"}
-          alt={"Alex Reyne Profile Picture"}
-          style={{ maxHeight: "10rem", marginTop: "4rem" }}
+          src={'/alex-reyne-logo.png'}
+          alt={'Alex Reyne Profile Picture'}
+          style={{ maxHeight: '10rem', marginTop: '4rem' }}
         />
 
         <div>
@@ -46,16 +46,16 @@ export default function Home({ drops }) {
               <a href={link.url} key={link.id}>
                 <button>{link.name}</button>
               </a>
-            );
+            )
           })}
           <p>creativereyne@gmail.com</p>
         </div>
 
         <footer className={styles.footer}>
           <p>
-            Designed and Developed by{" "}
+            Designed and Developed by{' '}
             <a
-              href="https://github.com/alex-reyne"
+              href="https://github.com/Alex-Reyne/reyne-drops"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,5 +65,5 @@ export default function Home({ drops }) {
         </footer>
       </main>
     </>
-  );
+  )
 }
