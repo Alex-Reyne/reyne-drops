@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/drops");
+  const res = await fetch("http://reyne-drops.vercel.app/api/drops");
   const drops = await res.json();
   return {
     props: { drops },
