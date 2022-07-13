@@ -28,7 +28,7 @@ export default function Home({ drops }) {
         <img
           src={'/alex-reyne-logo.png'}
           alt={'Alex Reyne Profile Picture'}
-          style={{ maxHeight: '10rem', marginTop: '4rem' }}
+          style={{ maxHeight: '10rem', marginTop: '2rem' }}
         />
 
         <div>
