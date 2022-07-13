@@ -14,6 +14,8 @@ If you would like to use this repo follow these steps:
 
 ## > Clone the forked repo
 
+## > Install packages
+
 ```bash
  npm install
 ```
