@@ -18,7 +18,7 @@
 }
 
 .footer a {
-  color: #00c3ff;
+  color: #ffc959;
 }
 
 .title {
@@ -30,7 +30,13 @@
 .title,
 .description {
   text-align: center;
-  color: #1d1d1d;
+}
+
+.description {
+  color: #3b616f;
+}
+.title {
+  color: #f16979;
 }
 
 .description {
