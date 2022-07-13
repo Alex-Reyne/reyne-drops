@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { LinkList } from "../styles/styled-list";
 import styles from "../styles/Home.module.css";
 
 export async function getServerSideProps() {
@@ -41,7 +40,7 @@ export default function Home({ drops }) {
           </div>
         </div>
 
-        <LinkList>
+        <div className={styles.linkList}>
           {links.map((link) => {
             return (
               <a href={link.url} key={link.id}>
@@ -50,7 +49,7 @@ export default function Home({ drops }) {
             );
           })}
           <p>creativereyne@gmail.com</p>
-        </LinkList>
+        </div>
 
         <footer className={styles.footer}>
           <p>
