@@ -52,16 +52,14 @@ export default function Home({ drops }) {
         </div>
 
         <footer className={styles.footer}>
-          <p>
-            Designed and Developed by{' '}
-            <a
-              href="https://github.com/Alex-Reyne/reyne-drops"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Alexander Reyne.
-            </a>
-          </p>
+          <p>Designed and Developed by</p>
+          <a
+            href="https://github.com/Alex-Reyne/reyne-drops"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Alexander Reyne.
+          </a>
         </footer>
       </main>
     </>
