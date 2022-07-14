@@ -4,6 +4,11 @@ Reyne Drops is a custom linksharing app that I built in place of linktree so tha
 
 This is project is very simple and open source for anyone who would like to use it. The only requirement is that you link back to this repo in the footer.
 
+
+## > Screenshot
+
+![ReyneDrops](https://raw.githubusercontent.com/Alex-Reyne/reyne-drops/main/public/reyne-drops-social-image.png)
+
 ---
 
 ## Getting Started
