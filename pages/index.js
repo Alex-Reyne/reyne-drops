@@ -20,7 +20,7 @@ export default function Home({ drops }) {
           name="description"
           content="Alexander Reyne - Software Developer @ TELUS Digital &amp; Freelance Graphic Designer"
         />
-        <meta property="og:image" content="./reyne-drops-social-image.png" />
+        <meta property="og:image" content="./social-sharing-reyne-drops.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="960" />
         <meta property="og:image:height" content="488" />
