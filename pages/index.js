@@ -15,10 +15,11 @@ export default function Home({ drops }) {
   return (
     <>
       <Head>
-        <title>Reyne Drops</title>
+        <title>Alexander Reyne</title>
+        <meta property="og:title" content="Alexander Reyne" />
         <meta
           property="og:description"
-          content="Alexander Reyne - Software Developer @ TELUS Digital &amp; Freelance Graphic Designer"
+          content="Software Developer @ TELUS Digital &amp; Freelance Graphic Designer"
         />
         <meta
           property="og:image"
