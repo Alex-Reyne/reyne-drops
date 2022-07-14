@@ -17,13 +17,16 @@ export default function Home({ drops }) {
       <Head>
         <title>Reyne Drops</title>
         <meta
-          name="description"
+          property="og:description"
           content="Alexander Reyne - Software Developer @ TELUS Digital &amp; Freelance Graphic Designer"
         />
-        <meta property="og:image" content="./social-sharing-reyne-drops.png" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/Alex-Reyne/reyne-drops/main/public/social-sharing-reyne-drops.png"
+        />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="960" />
-        <meta property="og:image:height" content="488" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
