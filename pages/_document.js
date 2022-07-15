@@ -2,8 +2,11 @@
 
 FOR GOOGLE ANALYTICS ONLY.
 
-- If you DO NOT want to use google Analytics, delete this file.
+- If you DO NOT want to use google Analytics, delete this file 
+and the `useRouter` & `useEffect` from _app.js (lines 6 through 18).
+
 - If you DO want to use google analytics, update lines 32, and 41 with YOUR gtag.
+you will also have to update _app.js to use YOUR gtag.
 
 */
 
