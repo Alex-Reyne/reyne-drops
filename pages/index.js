@@ -70,7 +70,7 @@ export default function Home({ drops }) {
         <div className={styles.linkList}>
           {links.map((link) => {
             return (
-              <a href={link.url} key={link.id}>
+              <a href={link.url} target="_blank" key={link.id}>
                 <button>{link.name}</button>
               </a>
             )
