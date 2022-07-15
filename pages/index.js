@@ -52,35 +52,37 @@ export default function Home({ drops }) {
       </Head>
 
       <main className={styles.main}>
-        <img
-          src={'/alex-reyne-logo.png'}
-          alt={'Alex Reyne Profile Picture'}
-          style={{ maxHeight: '10rem', marginTop: '2rem' }}
-        />
+        <div className={styles.contentWrap}>
+          <img
+            src={'/alex-reyne-logo.png'}
+            alt={'Alex Reyne Profile Picture'}
+            style={{ maxHeight: '10rem', marginTop: '2rem' }}
+          />
 
-        <div>
-          <h1 className={styles.title}>Alexander Reyne</h1>
+          <div>
+            <h1 className={styles.title}>Alexander Reyne</h1>
 
-          <div className={styles.description}>
-            <p>Software Developer @ TELUS Digital</p>
-            <p>Freelance Graphic Designer</p>
+            <div className={styles.description}>
+              <p>Software Developer @ TELUS Digital</p>
+              <p>Freelance Graphic Designer</p>
+            </div>
           </div>
-        </div>
 
-        <div className={styles.linkList}>
-          {links.map((link) => {
-            return (
-              <a
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={link.id}
-              >
-                <button>{link.name}</button>
-              </a>
-            )
-          })}
-          <p>creativereyne@gmail.com</p>
+          <div className={styles.linkList}>
+            {links.map((link) => {
+              return (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={link.id}
+                >
+                  <button>{link.name}</button>
+                </a>
+              )
+            })}
+            <p>creativereyne@gmail.com</p>
+          </div>
         </div>
 
         {/* do-not remove or edit this div, it's css, or it's related functions, states, or svg. */}
