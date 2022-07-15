@@ -22,7 +22,7 @@
   text-align: center;
   color: white;
   background-color: #1d1d1d;
-  max-height: 10%;
+  max-height: 10rem;
   width: 100%;
   padding: 1rem;
 }
@@ -33,6 +33,31 @@
 
 .footer a {
   color: #ffc959;
+}
+
+.footer svg {
+  width: 50px;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    flex-direction: row;
+    max-height: 10%;
+  }
+
+  .footer svg {
+    position: absolute;
+    right: 5%;
+    width: 50px;
+    margin-top: 0;
+  }
+
+  .tipBox {
+    position: absolute;
+    right: 10rem;
+    bottom: 6rem;
+  }
 }
 
 .title {
@@ -69,6 +94,19 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.tipBox button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tipBox button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .linkList button {
@@ -109,3 +147,75 @@
     inset 2px 2px 2px rgba(255, 255, 255, 0.075),
     inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* do-not remove the following CSS, or it's related functions, states, or svg. 
+(you may change the styles in the css as long as it is still easily visible) */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #1d1d1d2c;
+
+  position: fixed;
+  z-index: 1;
+}
+
+.tipBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 10rem;
+  max-width: 20rem;
+  padding: 2rem;
+  border-radius: 25px;
+
+  background-color: #efefef;
+  box-shadow: 6px 6px 10px #00000026;
+
+  z-index: 1;
+}
+
+.close {
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+}
+
+.tipBox button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  border: none;
+  border-radius: 25px;
+
+  font-family: 'Poppins', sans-serif;
+
+  color: #3b616f;
+  background: #efefef;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* END */
