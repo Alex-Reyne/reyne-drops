@@ -7,7 +7,7 @@ export default function handler(req, res) {
       {
         id: 2,
         name: 'Design Portfolio',
-        url: 'https://creativereyne.ca/',
+        url: 'https://www.creativereyne.ca/',
       },
       { id: 3, name: 'Github', url: 'https://github.com/alex-reyne' },
       {
