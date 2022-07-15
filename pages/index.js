@@ -14,7 +14,7 @@ export default function Home({ drops }) {
   const links = drops.links
 
   /* do-not remove or edit these functions or thier related functions, states, or svg. */
-  /* (you may change the styles in the css as long as it is still easily visible) */
+  /* (you may change the styles in the css as long as it is still easily visible)  */
   const [toolTip, setToolTip] = useState(styles.hidden)
 
   useEffect(() => {
