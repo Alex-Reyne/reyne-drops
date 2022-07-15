@@ -2,8 +2,11 @@
 
 Reyne Drops is a custom linksharing app that I built in place of linktree so that I could customize it to my liking... and not have to pay for linktrees premium features.
 
-This is project is very simple and open source for anyone who would like to use it. The only requirement is that you link back to this repo in the footer.
+## > open source
 
+This is project is very simple and open source for anyone who would like to use it.
+
+The only requirement is that you don't remove or edit the `[DEV]` SVG and its popup. There are comments in the code around it's related functions, divs, and CSS.
 
 ## > Screenshot
 

@@ -11,8 +11,11 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ drops }) {
-  const [toolTip, setToolTip] = useState(styles.hidden)
   const links = drops.links
+
+  /* do-not remove or edit these functions or thier related functions, states, or svg. */
+  /* (you may change the styles in the css as long as it is still easily visible) */
+  const [toolTip, setToolTip] = useState(styles.hidden)
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,6 +30,7 @@ export default function Home({ drops }) {
 
     setToolTip(styles.hidden)
   }
+  /* END */
 
   return (
     <>
