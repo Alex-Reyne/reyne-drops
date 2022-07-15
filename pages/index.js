@@ -18,9 +18,9 @@ export default function Home({ drops }) {
   const [toolTip, setToolTip] = useState(styles.hidden)
 
   useEffect(() => {
-    setTimeout(() => {
-      setToolTip(styles.visible)
-    }, 5000)
+    // setTimeout(() => {
+    //   setToolTip(styles.visible)
+    // }, 5000)
   }, [])
 
   const visible = () => {
@@ -52,35 +52,37 @@ export default function Home({ drops }) {
       </Head>
 
       <main className={styles.main}>
-        <img
-          src={'/alex-reyne-logo.png'}
-          alt={'Alex Reyne Profile Picture'}
-          style={{ maxHeight: '10rem', marginTop: '2rem' }}
-        />
-
-        <div>
+        <div className={styles.contentWrap}>
+          <img
+            src={'/alex-reyne-logo.png'}
+            alt={'Alex Reyne Profile Picture'}
+            style={{
+              height: '100%',
+              maxHeight: '10rem',
+            }}
+          />
           <h1 className={styles.title}>Alexander Reyne</h1>
 
           <div className={styles.description}>
             <p>Software Developer @ TELUS Digital</p>
             <p>Freelance Graphic Designer</p>
           </div>
-        </div>
 
-        <div className={styles.linkList}>
-          {links.map((link) => {
-            return (
-              <a
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={link.id}
-              >
-                <button>{link.name}</button>
-              </a>
-            )
-          })}
-          <p>creativereyne@gmail.com</p>
+          <div className={styles.linkList}>
+            {links.map((link) => {
+              return (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={link.id}
+                >
+                  <button>{link.name}</button>
+                </a>
+              )
+            })}
+            <p>creativereyne@gmail.com</p>
+          </div>
         </div>
 
         {/* do-not remove or edit this div, it's css, or it's related functions, states, or svg. */}
