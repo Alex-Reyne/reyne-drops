@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 
   height: 100%;
@@ -12,11 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  margin-top: 2rem;
-
-  height: 100%;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .linkList {
@@ -36,8 +33,9 @@
   color: white;
   background-color: #1d1d1d;
   max-height: 10rem;
-  width: 100%;
+  width: 100vw;
   padding: 1rem;
+  margin-top: auto;
 }
 
 .footer p {
@@ -56,7 +54,7 @@
 @media only screen and (min-width: 1000px) {
   .footer {
     flex-direction: row;
-    max-height: 10%;
+    max-height: 10rem;
   }
 
   .footer svg {
