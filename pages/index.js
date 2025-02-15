@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export async function getServerSideProps() {
-  const res = await fetch('http://reyne-drops.vercel.app/api/drops')
+  const res = await fetch('http://reyne-drops.vercel.app/api/drops', {
+    revalidate: 0,
+  })
   const drops = await res.json()
   return {
     props: { drops },
