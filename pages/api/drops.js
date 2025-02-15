@@ -30,6 +30,11 @@ export default function handler(req, res) {
         name: 'Photography ig',
         url: 'https://www.instagram.com/alexreyne.ph/',
       },
+      {
+        id: 8,
+        name: 'Mini Painting ig',
+        url: 'https://www.instagram.com/reyne.of.color/',
+      },
     ],
   })
 }
