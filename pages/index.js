@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export const dynamic = 'force-dynamic'
 export async function getServerSideProps() {
-  const res = await fetch('/api/drops')
+  const res = await fetch('http://reyne-drops.ca/api/drops')
   const drops = await res.json()
   return {
     props: { drops },
