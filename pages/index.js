@@ -4,7 +4,9 @@ import styles from '../styles/Home.module.css'
 
 export const dynamic = 'force-dynamic'
 export async function getServerSideProps() {
-  const res = await fetch('http://reyne-drops.vercel.app/api/drops')
+  const res = await fetch('http://reyne-drops.vercel.app/api/drops', {
+    cache: 'no-store',
+  })
   const drops = await res.json()
   return {
     props: { drops },
