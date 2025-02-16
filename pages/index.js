@@ -2,11 +2,8 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
-export const dynamic = 'force-dynamic'
 export async function getServerSideProps() {
-  const res = await fetch('http://reyne-drops.vercel.app/api/drops', {
-    cache: 'no-store',
-  })
+  const res = await fetch('http://reyne-drops.vercel.app/api/drops')
   const drops = await res.json()
   return {
     props: { drops },
@@ -75,6 +72,7 @@ export default function Home({ drops }) {
             {links.map((link) => {
               return (
                 <a
+                  className={styles.link}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -84,8 +82,8 @@ export default function Home({ drops }) {
                 </a>
               )
             })}
-            <p>creativereyne@gmail.com</p>
           </div>
+          <p>creativereyne@gmail.com</p>
           <footer className={styles.footer}>
             <div>
               <p>Designed and Developed by</p>

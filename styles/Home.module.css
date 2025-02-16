@@ -24,6 +24,19 @@
   margin: 1rem;
 }
 
+@media screen and (min-width: 700px) {
+  .linkList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 1rem;
+  }
+}
+
+.link {
+  margin: 0.25rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
