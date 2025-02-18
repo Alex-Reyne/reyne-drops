@@ -75,7 +75,7 @@ export default function Home({ drops }) {
               const { id, name, url, icon, image } = link
               return (
                 <Card
-                  id={id}
+                  key={id}
                   url={url}
                   alt={`${name} Image`}
                   icon={icon}
