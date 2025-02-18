@@ -9,6 +9,13 @@
   /* border: 2px solid red; */
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
 .content {
   position: relative;
   width: 100%;
