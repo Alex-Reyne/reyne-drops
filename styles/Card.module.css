@@ -9,13 +9,6 @@
   /* border: 2px solid red; */
 }
 
-@media screen and (max-width: 500px) {
-  .container {
-    width: 45vw;
-    height: 45vw;
-  }
-}
-
 .content {
   position: relative;
   width: 100%;
@@ -32,7 +25,7 @@
   left: 1rem;
   margin: 0;
   color: #ffc959;
-  font-size: 20px;
+  font-size: 1.25rem;
   /* border: 2px solid green; */
 }
 
@@ -72,4 +65,15 @@
 
 .container:hover .title {
   text-shadow: 3px 3px 10px black;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
 }
