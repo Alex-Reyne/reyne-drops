@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
+import Card from '../components/Card'
 
 export async function getServerSideProps() {
   const res = await fetch('http://reyne-drops.vercel.app/api/drops')
+  // const res = await fetch('http://localhost:3000/api/drops')
   const drops = await res.json()
   return {
     props: { drops },
@@ -70,16 +72,16 @@ export default function Home({ drops }) {
 
           <div className={styles.linkList}>
             {links.map((link) => {
+              const { id, name, url, icon, image } = link
               return (
-                <a
-                  className={styles.link}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={link.id}
-                >
-                  <button>{link.name}</button>
-                </a>
+                <Card
+                  id={id}
+                  url={url}
+                  alt={`${name} Image`}
+                  icon={icon}
+                  image={image}
+                  text={name}
+                ></Card>
               )
             })}
           </div>

@@ -17,18 +17,26 @@
 }
 
 .linkList {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   margin: 1rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 874px) {
   .linkList {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
+}
 
+@media screen and (max-width: 699px) {
+  .linkList {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 1rem;
     margin: 1rem;
   }
 }
@@ -49,6 +57,7 @@
   width: 100vw;
   padding: 1rem;
   margin-top: auto;
+  /* display: none; */
 }
 
 .footer p {
