@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   transition: 250ms;
   /* border: 2px solid blue; */
 }
@@ -46,16 +46,20 @@
   width: 100%;
   height: 100%;
   object-fit: fill;
-  filter: blur(1px);
-  transition: 250ms;
-}
-
-.container:hover .image {
   filter: blur(0px);
   transition: 250ms;
 }
+
+.container:hover {
+  outline: 3px solid #f16979;
+}
+
+.container:hover .image {
+  filter: blur(1px);
+  transition: 250ms;
+}
 .container:hover .content {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
   transition: 250ms;
 }
 
