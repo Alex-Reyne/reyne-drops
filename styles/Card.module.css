@@ -26,6 +26,7 @@
   margin: 0;
   color: #ffc959;
   font-size: 1.25rem;
+  text-shadow: 3px 3px 10px black;
   /* border: 2px solid green; */
 }
 
@@ -67,9 +68,9 @@
   text-shadow: 3px 3px 5px black;
 }
 
-.container:hover .title {
+/* .container:hover .title {
   text-shadow: 3px 3px 10px black;
-}
+} */
 
 @media screen and (max-width: 500px) {
   .container {
