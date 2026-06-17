@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Card from '../components/Card'
+import GameConModal from '../components/GameConModal'
 
 export async function getServerSideProps() {
   const res = await fetch('http://reyne-drops.vercel.app/api/drops')
@@ -36,6 +37,8 @@ export default function Home({ drops }) {
 
   return (
     <>
+      <GameConModal />
+
       <Head>
         <title>Alexander Reyne</title>
         <meta property="og:title" content="Alexander Reyne" />
